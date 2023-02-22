@@ -1,0 +1,118 @@
+*,
+**::before,
+**::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0c9a6;
+  font-family: "Shantell Sans", cursive;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: fit-content;
+}
+
+/* Navigation styles */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: #dc5400;
+  color: #ecf0f3;
+}
+
+header p {
+  font-size: 45px;
+  margin: 0.7rem 0rem;
+  grid-column-start: span 2;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  list-style: none;
+  padding: 0.5rem;
+  margin-right: 2rem;
+  font-size: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header a:hover {
+  color: blanchedalmond;
+}
+
+/* end navigation style */
+
+/* Pieseczeki */
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dogs__card {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  gap: 1rem;
+}
+
+/* .dogs__card img {
+  max-width: fit-content;
+} */
+
+.dogs__card p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.dogs__card--golden {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dogs__card--samoyed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dogs__card button {
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  border: transparent;
+  font-size: 20px;
+  font-family: "Shantell Sans", cursive;
+  font-weight: bolder;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.dogs__card--golden button {
+  background-color: #dc5400;
+}
+
+.dogs__card--samoyed button {
+  background-color: #afc1cb;
+}
